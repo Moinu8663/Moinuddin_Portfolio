@@ -1,0 +1,49 @@
+<section class="skills section">
+  <div class="container">
+    <p class="section-eyebrow">What I Know</p>
+    <h2 class="section-title">Technical <span>Skills</span></h2>
+    <p class="section-subtitle">A curated set of technologies I use to build world-class products.</p>
+
+    <div class="skills-layout">
+
+      <div class="skills-bars glass-card">
+        <h3 class="card-title">Core Proficiencies</h3>
+        @for (skill of techSkills; track skill.name) {
+          <div class="skill-row">
+            <div class="skill-meta">
+              <span class="skill-name">{{ skill.name }}</span>
+              <span class="skill-pct">{{ skill.level }}%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" [style.width.%]="skill.level" [style.background]="skill.color"></div>
+            </div>
+          </div>
+        }
+      </div>
+
+      <div class="skills-right">
+        <div class="tools-card glass-card">
+          <h3 class="card-title">Tools & Ecosystem</h3>
+          <div class="tools-grid">
+            @for (tool of tools; track tool.name) {
+              <div class="tool-item">
+                <span class="tool-icon">{{ tool.icon }}</span>
+                <span class="tool-name">{{ tool.name }}</span>
+              </div>
+            }
+          </div>
+        </div>
+
+        <div class="stats-row">
+          @for (s of stats; track s.label) {
+            <div class="stat-card glass-card">
+              <span class="stat-num">{{ s.value }}</span>
+              <span class="stat-lbl">{{ s.label }}</span>
+            </div>
+          }
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
