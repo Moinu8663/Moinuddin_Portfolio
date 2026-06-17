@@ -1,0 +1,5 @@
+- [x] Gather README.md current content
+- [x] Draft README.md update plan (project description + installation)
+- [ ] Get confirmation from user to apply README edits
+- [ ] Apply README.md edits
+- [ ] Verify README renders correctly (no broken markdown)

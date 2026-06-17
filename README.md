@@ -26,6 +26,41 @@ For a complete list of available schematics (such as `components`, `directives`,
 ng generate --help
 ```
 
+## Project description
+
+This repository contains my personal portfolio website built with **Angular**.
+
+Key sections/pages included in the app:
+
+- **Hero** (intro header)
+- **Navbar** (site navigation)
+- **About** (bio and background)
+- **Experience** (work history)
+- **Skills** (technical skills)
+- **Projects** (project showcase)
+- **Contact** (contact section)
+- **Footer** (site footer)
+
+The layout is component-based and styled with Angular component stylesheets (plus global styles/themes where applicable).
+
+## Installation
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Run the development server:
+
+```bash
+ng serve
+```
+
+3. Open your browser at:
+
+- http://localhost:4200/
+
 ## Building
 
 To build the project run:
@@ -53,6 +88,23 @@ ng e2e
 ```
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Deploy to Azure Static Web Apps (CI/CD)
+
+1. **Create an Azure Static Web Apps** resource.
+   - Choose your resource name.
+   - Deployment token is generated in the Static Web Apps resource.
+
+2. **Build for static hosting**
+
+```bash
+ng build --configuration production
+```
+
+3. **Deploy via GitHub Actions**
+   - Add/update a GitHub Actions workflow that builds the Angular app and publishes the output to Azure Static Web Apps.
+   - In the workflow, use the Static Web Apps `deployment_token` from Azure.
+
 
 ## Additional Resources
 
