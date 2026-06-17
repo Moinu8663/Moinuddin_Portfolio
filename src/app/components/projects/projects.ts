@@ -41,7 +41,7 @@ export class Projects {
       iconBg: 'linear-gradient(135deg, rgba(124,58,237,0.2), rgba(124,58,237,0.05))',
     },
     {
-      title: 'Inventory & POS System',
+      title: 'TicTacToe Game',
       description: 'TicTacToe Game is an interactive multiplayer game developed using modern web technologies and SignalR for real-time communication. It supports online gameplay with friends, single-player mode against the computer (AI), and offline two-player mode on the same screen. The game includes win detection, draw validation, score tracking, responsive design, and a user-friendly interface, delivering a seamless gaming experience across desktop and mobile devices.',
       points: [
         'Angular 21 frontend with lazy-loaded modules and reactive forms',
@@ -65,9 +65,9 @@ export class Projects {
         'Angular Material with custom dark theme',
         'Deployed on Azure Static Web Apps',
       ],
-      tags: ['Angular', '.NET', 'Azure'],
+      tags: ['Angular', 'Azure'],
       github: 'https://github.com/Moinu8663',
-      demo: 'https://portfolio.moinuddin.sbs',
+      demo: 'https://moinuddin.sbs',
       featured: false,
       icon: '🌐',
       iconBg: 'linear-gradient(135deg, rgba(167,139,250,0.2), rgba(167,139,250,0.05))',
